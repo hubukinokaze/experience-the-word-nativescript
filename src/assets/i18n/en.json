@@ -1,0 +1,17 @@
+{
+    "menu": {
+        "home": "Home",
+        "about": "About"
+    },
+    "home": {
+        "title": "Home",
+        "description": "Welcome to Experience The Word."
+    },
+    "about": {
+        "title": "About",
+        "description": "About Experience The Word."
+    },
+    "phone": {
+        "edition": "Android Version!"
+    }
+}
