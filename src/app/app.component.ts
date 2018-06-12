@@ -12,6 +12,7 @@ declare const require: any;
     templateUrl: './app.component.html',
 })
 export class AppComponent {
+    public translate;
 
     menuItems: MenuItem[] = [
         {
@@ -25,8 +26,13 @@ export class AppComponent {
     ];
 
     constructor(translate: TranslateService) {
-        translate.setTranslation('en', require('../assets/i18n/en.json'));
-        translate.setDefaultLang('en');
-        translate.use('en');
+        this.translate = translate;
+        this.translate.setTranslation('en', require('../assets/i18n/en.json'));
+        this.translate.setDefaultLang('en');
+        this.translate.use('en');
+    }
+
+    useLanguage(language: string) {
+        this.translate.use(language);
     }
 }

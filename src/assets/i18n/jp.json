@@ -1,0 +1,17 @@
+{
+    "menu": {
+        "home": "ホーム",
+        "about": "アバウト"
+    },
+    "home": {
+        "title": "ホーム",
+        "description": "Welcome to Experience The Word."
+    },
+    "about": {
+        "title": "アバウト",
+        "description": "アバウト Experience The Word."
+    },
+    "phone": {
+        "edition": "Android Version!"
+    }
+}

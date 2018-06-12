@@ -1,4 +1,4 @@
-# Angular NativeScript Seed
+# Experience The Word
 
 Build truly web and native applications using NativeScript and Angular. This seed allows your project to share code between the environments; having complete control over dependencies.
 
