@@ -2,10 +2,12 @@
     "name": "experience-the-word-nativescript",
     "version": "0.0.0",
     "scripts": {
+        "clean": "clean:dist",
+        "clean:dist": "rimraf dist",
         "postinstall": "node symlink.js",
         "ng": "ng",
         "start": "ng serve --open --proxy-config proxy.conf.json",
-        "build": "ng build",
+        "build": "ng build clean",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
