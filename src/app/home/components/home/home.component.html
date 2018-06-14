@@ -36,7 +36,9 @@
             <span [innerText]="'home.options-selected' | translate"></span><span>{{shoesList.length}}</span>
         </mat-card-header>
         <mat-selection-list [(ngModel)]="shoesList">
-            <mat-spinner></mat-spinner>
+            <div class="center-container">
+                <mat-spinner *ngIf="listLoaded === false" class="spinner"></mat-spinner>
+            </div>
             <mat-list-option *ngFor="let i of users">
                 <h3>Chapter: {{i.username}}</h3>
                 <h4>Name: {{i.firstName}} {{i.lastName}}</h4>

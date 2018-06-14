@@ -16,13 +16,12 @@ export class HomeComponent implements OnInit {
     public hello;
     public users;
     public shoesList: string[] = [];
-
+    public listLoaded = false;
     constructor(private _userService: UserService, translate: TranslateService) {
         this.translate = translate;
         this.translate.setTranslation('en', require('assets/i18n/en.json'));
         this.translate.setDefaultLang('en');
         this.translate.use('en');
-
     }
 
     ngOnInit() {
@@ -60,7 +59,7 @@ export class HomeComponent implements OnInit {
         ];
 
         this._userService.getAllUsers().subscribe(
-            data => { this.users = data },
+            data => { this.users = data; this.listLoaded = true; },
                 err => { this.users = mockdata },
             () => console.log('successfully loaded users')
         );

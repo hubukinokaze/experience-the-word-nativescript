@@ -1,4 +1,4 @@
-#home-container {
+#home-container, .center-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +16,10 @@
     background-size: cover;
 }
 
+#home-container .mat-selection-list {
+    padding: 0 !important;
+}
+
 .ribbon {
     position: fixed;
     border:       50px solid darkred;        /* All borders set */
@@ -27,4 +31,8 @@
     top:0;
     left: 50px;
     box-shadow: none !important;
+}
+
+.spinner {
+    margin: 30px 10px;
 }
