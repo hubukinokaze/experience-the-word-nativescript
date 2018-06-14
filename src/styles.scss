@@ -8,3 +8,34 @@ body {
 .container {
     margin:40px;
 }
+
+.spacer {
+    flex-grow: 1;
+}
+
+.spaced-container, .menu-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mat-select-value, .mat-select-arrow {
+    color: #FFFFFF;
+}
+
+.mat-select-arrow {
+    color: #CFB53B;
+}
+
+.mat-input-underline.mat-form-field-underline {
+    background-color: #FFFFFF;
+}
+
+.mat-input-ripple.mat-form-field-ripple {
+    background-color: #CFB53B;
+}
+
+.mat-option-text {
+    color: #CFB53B;
+}

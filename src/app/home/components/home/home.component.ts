@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { UserService } from 'app/services/user.service';
 import 'rxjs/add/operator/map';
-
-declare const require: any;
 
 @Component({
     moduleId: module.id,
@@ -12,17 +9,11 @@ declare const require: any;
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-    public translate;
     public hello;
     public users;
     public shoesList: string[] = [];
     public listLoaded = false;
-    constructor(private _userService: UserService, translate: TranslateService) {
-        this.translate = translate;
-        this.translate.setTranslation('en', require('assets/i18n/en.json'));
-        this.translate.setDefaultLang('en');
-        this.translate.use('en');
-    }
+    constructor(private _userService: UserService) {}
 
     ngOnInit() {
         this.getAllUsers();
@@ -30,10 +21,6 @@ export class HomeComponent implements OnInit {
 
     clearInput() {
         this.shoesList = [];
-    }
-
-    useLanguage(language: string) {
-        this.translate.use(language);
     }
 
     getAllUsers() {

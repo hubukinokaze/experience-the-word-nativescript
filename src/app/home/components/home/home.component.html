@@ -1,14 +1,14 @@
-<h2 class="description"
-    [innerText]="'home.description' | translate"></h2>
+<div class="description-header">
+    <mat-card class="ribbon-horizontal"></mat-card>
+    <div class="description" [innerText]="'home.description' | translate"></div>
+</div>
 
-<mat-form-field>
-    <input matInput placeholder="Button name" [(ngModel)]="hello" required>
-    <!--<mat-error *ngIf="hello.invalid">{{hello}}</mat-error>-->
-</mat-form-field>
+<!--<mat-form-field>-->
+    <!--<input matInput placeholder="Button name" [(ngModel)]="hello" required>-->
+    <!--&lt;!&ndash;<mat-error *ngIf="hello.invalid">{{hello}}</mat-error>&ndash;&gt;-->
+<!--</mat-form-field>-->
 
-<button mat-raised-button (click)="clearInput()">button: {{ hello }}</button>
-<button mat-raised-button (click)="useLanguage('en')">en</button>
-<button mat-raised-button (click)="useLanguage('jp')">jp</button>
+<!--<button mat-raised-button (click)="clearInput()">button: {{ hello }}</button>-->
 
 <div id="home-container">
     <mat-card class="home-card half-card">
@@ -47,5 +47,4 @@
     </mat-card>
 </div>
 
-<mat-card class="ribbon">
-</mat-card>
+<mat-card class="ribbon"></mat-card>

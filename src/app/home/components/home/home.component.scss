@@ -22,17 +22,87 @@
 
 .ribbon {
     position: fixed;
-    border:       50px solid darkred;        /* All borders set */
-    border-bottom: 30px solid transparent; /* Right transparent */
-    width:        0;
+    border-top: 75vh solid darkred;        /* All borders set */
+    border-right: 3vw solid darkred;
+    border-left: 3vw solid darkred;
+    border-bottom: 3vw solid transparent; /* Right transparent */
+    width: 0;
     z-index: -1;
-    height: 70vh;
     padding: 0;
     top:0;
-    left: 50px;
+    left: 5vw;
     box-shadow: none !important;
+    box-sizing: border-box;
+}
+
+.description-header {
+    position: relative;
+}
+
+.description-header .ribbon-horizontal {
+    border-top: 3vw solid darkred;        /* All borders set */
+    border-right: 3vw solid transparent;
+    border-left: 55vw solid darkred;
+    border-bottom: 3vw solid darkred; /* Right transparent */
+    width: 0;
+    height: 0;
+    z-index: -1;
+    padding: 0;
+    top: -20px;
+    left: -40px;
+    box-shadow: none !important;
+    box-sizing: border-box;
+}
+
+.description-header .description {
+    position: absolute;
+    top: -15px;
 }
 
 .spinner {
     margin: 30px 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .description-header .ribbon-horizontal {
+        border-left: 90vw solid darkred;
+    }
+    .description-header .description {
+        font-size: .3em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen  and (max-width:767px) and (min-width: 600px) {
+    .description-header .ribbon-horizontal {
+        border-left: 70vw solid darkred;
+    }
+    .description-header .description {
+        font-size: 1em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width:991px) and (min-width: 768px) {
+    .description-header .ribbon-horizontal {
+        border-top: 25px solid darkred;
+        border-bottom: 25px solid darkred;
+        border-left: 60vw solid darkred;
+    }
+    .description-header .description {
+        font-size: 1.2em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .description-header .ribbon-horizontal {
+        border-top: 25px solid darkred;
+        border-bottom: 25px solid darkred;
+    }
+    .description-header .description {
+        font-size: 1.5em;
+    }
 }

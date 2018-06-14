@@ -1,1 +1,14 @@
-<seed-menu-item *ngFor="let item of items" [item]="item"></seed-menu-item>
+<div class="menu-container">
+    <span class="menu-item"><a>ETW</a></span>
+    <seed-menu-item *ngFor="let item of items" [item]="item"></seed-menu-item>
+    <span class="spacer"></span>
+    <!--<span class="menu-item"><button mat-raised-button (click)="useLanguage('en')">EN</button></span>-->
+    <!--<span class="menu-item"><button mat-raised-button (click)="useLanguage('jp')">JP</button></span>-->
+    <span>
+        <mat-form-field>
+            <mat-select>
+                <mat-option *ngFor="let lang of languages" [value]="lang.value" (click)="useLanguage(lang.value)">{{ lang.name }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </span>
+</div>

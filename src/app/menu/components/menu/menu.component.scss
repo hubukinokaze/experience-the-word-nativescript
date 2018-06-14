@@ -2,8 +2,17 @@ $menuHeight: 80px;
 
 :host {
     display:block;
-    background-color: #000000;
+    background-color: rgba(59, 59, 59, 1);
     height:$menuHeight;
-    line-height:$menuHeight;
+    //line-height:$menuHeight;
     padding:0 20px;
+}
+
+.menu-item a {
+    color: red;
+}
+
+.menu-item a:hover {
+    color: #CFB53B;
+    text-decoration: underline #CFB53B;
 }
