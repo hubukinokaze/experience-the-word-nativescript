@@ -1,0 +1,30 @@
+#home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#home-container .half-card {
+    width: 50%;
+    margin: 10px;
+    align-self: center;
+}
+
+#home-container .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.ribbon {
+    position: fixed;
+    border:       50px solid darkred;        /* All borders set */
+    border-bottom: 30px solid transparent; /* Right transparent */
+    width:        0;
+    z-index: -1;
+    height: 70vh;
+    padding: 0;
+    top:0;
+    left: 50px;
+    box-shadow: none !important;
+}

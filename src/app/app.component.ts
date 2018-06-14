@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
 // vendor dependencies
-import { TranslateService } from '@ngx-translate/core';
 // app
 import { MenuItem } from './menu/menu.common';
 
-declare const require: any;
-
 @Component({
     moduleId: module.id,
-    selector: 'maestro-app',
+    selector: 'etw-app',
     templateUrl: './app.component.html',
 })
 export class AppComponent {
-    public translate;
+
 
     menuItems: MenuItem[] = [
         {
@@ -22,17 +19,14 @@ export class AppComponent {
         {
             title: 'menu.about',
             link: ['/about']
+        },
+        {
+            title: 'menu.signin',
+            link: ['/signin']
         }
     ];
 
-    constructor(translate: TranslateService) {
-        this.translate = translate;
-        this.translate.setTranslation('en', require('../assets/i18n/en.json'));
-        this.translate.setDefaultLang('en');
-        this.translate.use('en');
-    }
+    constructor() {
 
-    useLanguage(language: string) {
-        this.translate.use(language);
     }
 }

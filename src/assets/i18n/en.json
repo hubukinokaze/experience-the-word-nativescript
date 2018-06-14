@@ -1,11 +1,13 @@
 {
     "menu": {
         "home": "Home",
-        "about": "About"
+        "about": "About",
+        "signin": "Sign In"
     },
     "home": {
         "title": "Home",
-        "description": "Welcome to Experience The Word."
+        "description": "Welcome to Experience The Word.",
+        "options-selected": "Options selected:"
     },
     "about": {
         "title": "About",

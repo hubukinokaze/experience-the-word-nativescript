@@ -1,17 +1,19 @@
 {
     "menu": {
         "home": "ホーム",
-        "about": "アバウト"
+        "about": "アバウト",
+        "signin": "サインイン"
     },
     "home": {
         "title": "ホーム",
-        "description": "Welcome to Experience The Word."
+        "description": "エクスピーリエンス ザ ワード へ ようこそ!",
+        "options-selected": "選んだ件数:"
     },
     "about": {
         "title": "アバウト",
-        "description": "アバウト Experience The Word."
+        "description": "アバウト エクスピーリエンス ザ ワード."
     },
     "phone": {
-        "edition": "Android Version!"
+        "edition": "アンドロイド!"
     }
 }

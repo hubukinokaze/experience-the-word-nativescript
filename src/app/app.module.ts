@@ -9,6 +9,8 @@ import { Config } from './common/index';
 import { AppComponent } from './app.component';
 import { SHARED_MODULES } from './app.common';
 
+import { UserService } from './services/user.service';
+
 Config.PLATFORM_TARGET = Config.PLATFORMS.WEB;
 
 export function createTranslateLoader(http: HttpClient) {
@@ -29,7 +31,7 @@ export function createTranslateLoader(http: HttpClient) {
         }),
         ...SHARED_MODULES
     ],
-    providers: [],
+    providers: [ UserService ],
     bootstrap: [ AppComponent ]
 })
 export class AppModule {}

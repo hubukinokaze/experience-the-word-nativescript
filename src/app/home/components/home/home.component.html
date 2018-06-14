@@ -1,7 +1,49 @@
-<h1 class="title"
-    [innerText]="'home.title' | translate"></h1>
-<p class="description"
-    [innerText]="'home.description' | translate"></p>
+<h2 class="description"
+    [innerText]="'home.description' | translate"></h2>
 
-<input [(ngModel)]="hello">
-<button>button: {{hello}}</button>
+<mat-form-field>
+    <input matInput placeholder="Button name" [(ngModel)]="hello" required>
+    <!--<mat-error *ngIf="hello.invalid">{{hello}}</mat-error>-->
+</mat-form-field>
+
+<button mat-raised-button (click)="clearInput()">button: {{ hello }}</button>
+<button mat-raised-button (click)="useLanguage('en')">en</button>
+<button mat-raised-button (click)="useLanguage('jp')">jp</button>
+
+<div id="home-container">
+    <mat-card class="home-card half-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ hello }}</mat-card-title>
+            <mat-card-subtitle>Summary of the Word</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="half-card">
+        <mat-card-header>
+            <span [innerText]="'home.options-selected' | translate"></span><span>{{shoesList.length}}</span>
+        </mat-card-header>
+        <mat-selection-list [(ngModel)]="shoesList">
+            <mat-spinner></mat-spinner>
+            <mat-list-option *ngFor="let i of users">
+                <h3>Chapter: {{i.username}}</h3>
+                <h4>Name: {{i.firstName}} {{i.lastName}}</h4>
+            </mat-list-option>
+        </mat-selection-list>
+    </mat-card>
+</div>
+
+<mat-card class="ribbon">
+</mat-card>

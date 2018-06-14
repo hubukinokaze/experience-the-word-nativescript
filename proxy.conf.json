@@ -1,12 +1,7 @@
 {
-    "/api": {
-        "target": "https://www.example.com",
-        "cookieDomainRewrite": "example.com",
+    "/book/bookList": {
+        "target": "http://blog.rexlxy.me:8080/book/bookList",
         "secure": true,
-        "changeOrigin": true,
-        "logLevel": "debug",
-        "headers": {
-            "host": "example.com"
-        }
+        "changeOrigin": true
     }
 }
