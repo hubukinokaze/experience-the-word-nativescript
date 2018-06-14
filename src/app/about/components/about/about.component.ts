@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+    text: string;
 
-    constructor() { }
+    constructor() {
+        this.text = 'Write something';
+    }
 
     ngOnInit() {
     }
