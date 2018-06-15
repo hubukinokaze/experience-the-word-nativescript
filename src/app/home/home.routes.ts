@@ -8,6 +8,14 @@ export const HomeRoutes: Routes = [
         component: HomeComponent
     },
     {
+        path: 'chapter',
+        loadChildren: 'app/chapter/chapter.module#ChapterModule'
+    },
+    {
+        path: 'admin',
+        loadChildren: 'app/admin/admin.module#AdminModule'
+    },
+    {
         path: 'about',
         loadChildren: 'app/about/about.module#AboutModule'
     }

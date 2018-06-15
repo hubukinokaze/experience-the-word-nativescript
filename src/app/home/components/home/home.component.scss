@@ -67,10 +67,13 @@
 @media only screen and (max-width: 600px) {
 
     .description-header .ribbon-horizontal {
+        border-top: 20px solid darkred;
         border-left: 90vw solid darkred;
+        border-bottom: 20px solid darkred;
     }
-    .description-header .description {
-        font-size: .3em;
+
+    .half-card {
+        width: 100% !important;
     }
 }
 

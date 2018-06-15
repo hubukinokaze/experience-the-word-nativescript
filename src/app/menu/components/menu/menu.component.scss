@@ -8,15 +8,50 @@ $menuHeight: 80px;
     padding:0 20px;
 }
 
-.menu-item {
+.menu-container .menu-item {
     margin: 0 20px;
 }
 
-.menu-item a {
+.menu-container .menu-item a {
     color: red;
 }
 
-.menu-item a:hover {
+.menu-container .menu-item a:hover {
     color: #CFB53B;
     text-decoration: underline #CFB53B;
+}
+
+.small-screen-menu {
+    color: #FFFFFF;
+}
+
+.menu-container.small-screen {
+    display: none;
+    height: 100%;
+}
+
+button {
+    color:#fff;
+    text-decoration: none;
+    font-size:15px;
+    font-weight:600;
+    &.active {
+        color: #CFB53B;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    :host {
+        height: 50px;
+    }
+    .menu-container.big-screen {
+        display: none;
+    }
+    .menu-container.small-screen {
+        display: flex;
+    }
 }

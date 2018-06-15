@@ -1,7 +1,9 @@
 {
     "menu": {
         "home": "ホーム",
+        "chapter": "チャプター",
         "about": "アバウト",
+        "admin": "アドミン",
         "signin": "サインイン"
     },
     "home": {

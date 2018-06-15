@@ -17,8 +17,16 @@ export class AppComponent {
             link: ['/home']
         },
         {
+            title: 'menu.chapter',
+            link: ['/chapter']
+        },
+        {
             title: 'menu.about',
             link: ['/about']
+        },
+        {
+            title: 'menu.admin',
+            link: ['/admin']
         },
         {
             title: 'menu.signin',
