@@ -27,10 +27,6 @@ export class AppComponent {
         {
             title: 'menu.admin',
             link: ['/admin']
-        },
-        {
-            title: 'menu.signin',
-            link: ['/signin']
         }
     ];
 

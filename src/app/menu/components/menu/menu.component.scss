@@ -13,12 +13,11 @@ $menuHeight: 80px;
 }
 
 .menu-container .menu-item a {
-    color: red;
+    color: #FFFFFF;
 }
 
 .menu-container .menu-item a:hover {
-    color: #CFB53B;
-    text-decoration: underline #CFB53B;
+    text-decoration: underline #FFFFFF;
 }
 
 .small-screen-menu {
@@ -54,4 +53,8 @@ button {
     .menu-container.small-screen {
         display: flex;
     }
+}
+
+.signin-dialog {
+
 }

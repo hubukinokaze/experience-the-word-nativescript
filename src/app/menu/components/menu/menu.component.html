@@ -10,6 +10,7 @@
 <div class="menu-container big-screen">
     <span class="menu-item"><a>ETW</a></span>
     <seed-menu-item *ngFor="let item of items" [item]="item"></seed-menu-item>
+    <span class="menu-item"><a [innerText]="'menu.signin' | translate" (click)="openSignInDialog()"></a></span>
     <span class="spacer"></span>
     <!--<span class="menu-item"><button mat-raised-button (click)="useLanguage('en')">EN</button></span>-->
     <!--<span class="menu-item"><button mat-raised-button (click)="useLanguage('jp')">JP</button></span>-->

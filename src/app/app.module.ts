@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 // vendor dependencies
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -8,6 +8,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Config } from './common/index';
 import { AppComponent } from './app.component';
 import { SHARED_MODULES } from './app.common';
+import { SHARED_ENTRY } from './menu/menu.common';
 
 import { UserService } from './services/user.service';
 
@@ -19,6 +20,7 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
     declarations: [ AppComponent ],
+    entryComponents: [ SHARED_ENTRY ],
     imports: [
         BrowserAnimationsModule,
         HttpClientModule,
